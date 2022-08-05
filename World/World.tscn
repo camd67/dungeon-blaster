@@ -1,0 +1,408 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://World/tileBrickB_largeCrackedA.gltf.glb" type="PackedScene" id=1]
+[ext_resource path="res://World/tileBrickB_large.gltf.glb" type="PackedScene" id=2]
+[ext_resource path="res://World/wall.gltf.glb" type="PackedScene" id=3]
+[ext_resource path="res://World/wall_broken.gltf.glb" type="PackedScene" id=4]
+[ext_resource path="res://World/wallCorner.gltf.glb" type="PackedScene" id=5]
+[ext_resource path="res://World/wall_end_broken.gltf.glb" type="PackedScene" id=6]
+[ext_resource path="res://World/wall_gateDoor.gltf.glb" type="PackedScene" id=7]
+[ext_resource path="res://World/wall_gateCorner.gltf.glb" type="PackedScene" id=8]
+[ext_resource path="res://World/wall_gate.gltf.glb" type="PackedScene" id=9]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 9.078, 1, 7.923 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 20.3028, 4, 0.6 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.8, 4, 26.4536 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 19.085, 4, 0.698 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 0.85, 4, 24.814 )
+
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 7.816, 4, 0.74 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 0.733, 4, 4.773 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 0.722893, 4, 2.76254 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 0.705, 4, 3.583 )
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 1.45665, 4, 0.722726 )
+
+[sub_resource type="BoxShape" id=11]
+extents = Vector3( 2.93527, 4, 0.69477 )
+
+[node name="World" type="Spatial"]
+
+[node name="Floor" type="StaticBody" parent="."]
+collision_mask = 0
+
+[node name="tileBrickB_largeCrackedAgltf" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -1, 15 )
+
+[node name="tileBrickB_largeCrackedAgltf2" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, 21 )
+
+[node name="tileBrickB_largegltf" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -1, 15 )
+
+[node name="tileBrickB_largegltf2" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -1, 21 )
+
+[node name="tileBrickB_largegltf4" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, 15 )
+
+[node name="tileBrickB_largegltf3" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -1, 21 )
+
+[node name="tileBrickB_largeCrackedAgltf3" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -1, 3 )
+
+[node name="tileBrickB_largeCrackedAgltf4" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, 9 )
+
+[node name="tileBrickB_largegltf5" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -1, 3 )
+
+[node name="tileBrickB_largegltf6" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -1, 9 )
+
+[node name="tileBrickB_largegltf7" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, 3 )
+
+[node name="tileBrickB_largegltf8" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -1, 9 )
+
+[node name="tileBrickB_largeCrackedAgltf5" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -1, 15 )
+
+[node name="tileBrickB_largeCrackedAgltf6" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -1, 21 )
+
+[node name="tileBrickB_largegltf9" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, 15 )
+
+[node name="tileBrickB_largegltf10" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -1, 21 )
+
+[node name="tileBrickB_largegltf11" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -1, 15 )
+
+[node name="tileBrickB_largegltf12" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, 21 )
+
+[node name="tileBrickB_largeCrackedAgltf7" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -1, 3 )
+
+[node name="tileBrickB_largeCrackedAgltf8" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -1, 9 )
+
+[node name="tileBrickB_largegltf13" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, 3 )
+
+[node name="tileBrickB_largegltf14" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -1, 9 )
+
+[node name="tileBrickB_largegltf15" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -1, 3 )
+
+[node name="tileBrickB_largegltf16" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, 9 )
+
+[node name="tileBrickB_largeCrackedAgltf9" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -0.964345, -9 )
+
+[node name="tileBrickB_largeCrackedAgltf10" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, -3 )
+
+[node name="tileBrickB_largegltf17" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -1, -9 )
+
+[node name="tileBrickB_largegltf18" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -1, -3 )
+
+[node name="tileBrickB_largegltf19" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, -9 )
+
+[node name="tileBrickB_largegltf20" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -1, -3 )
+
+[node name="tileBrickB_largeCrackedAgltf11" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -1, -21 )
+
+[node name="tileBrickB_largeCrackedAgltf12" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, -15 )
+
+[node name="tileBrickB_largegltf21" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -1, -21 )
+
+[node name="tileBrickB_largegltf22" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -1, -15 )
+
+[node name="tileBrickB_largegltf23" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, -21 )
+
+[node name="tileBrickB_largegltf24" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -1, -15 )
+
+[node name="tileBrickB_largeCrackedAgltf13" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -1, -9 )
+
+[node name="tileBrickB_largeCrackedAgltf14" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -1, -3 )
+
+[node name="tileBrickB_largegltf25" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, -9 )
+
+[node name="tileBrickB_largegltf26" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -1, -3 )
+
+[node name="tileBrickB_largegltf27" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -1, -9 )
+
+[node name="tileBrickB_largegltf28" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, -3 )
+
+[node name="tileBrickB_largeCrackedAgltf15" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -1, -21 )
+
+[node name="tileBrickB_largeCrackedAgltf16" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -1, -15 )
+
+[node name="tileBrickB_largegltf29" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, -21 )
+
+[node name="tileBrickB_largegltf30" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -1, -15 )
+
+[node name="tileBrickB_largegltf31" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -1, -21 )
+
+[node name="tileBrickB_largegltf32" parent="Floor" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, -15 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Floor"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 3, 0, -1, 0 )
+shape = SubResource( 1 )
+
+[node name="Walls" type="StaticBody" parent="."]
+collision_mask = 0
+
+[node name="wallCornergltf" parent="Walls" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -24 )
+
+[node name="wallCornergltf2" parent="Walls" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, -24 )
+
+[node name="wallgltf" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -24 )
+
+[node name="wallgltf2" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -24 )
+
+[node name="wallgltf3" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -24 )
+
+[node name="wallgltf4" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -24 )
+
+[node name="wallgltf5" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -24 )
+
+[node name="wallgltf6" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -24 )
+
+[node name="wallgltf7" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -24 )
+
+[node name="wallgltf8" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -24 )
+
+[node name="wallgltf9" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -24 )
+
+[node name="wallCornergltf3" parent="Walls" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, 23.7819 )
+
+[node name="wallCornergltf4" parent="Walls" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -18, 0, 23.7819 )
+
+[node name="wallgltf10" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 23.7819 )
+
+[node name="wallgltf11" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 23.7819 )
+
+[node name="wallgltf12" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 23.7819 )
+
+[node name="wallgltf13" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 23.7819 )
+
+[node name="wallgltf14" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 23.7819 )
+
+[node name="wallgltf15" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 23.7819 )
+
+[node name="wallgltf16" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 23.7819 )
+
+[node name="wallgltf17" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 23.7819 )
+
+[node name="wallgltf18" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, 19.7854 )
+
+[node name="wallgltf19" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, 15.7854 )
+
+[node name="wallgltf20" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, 11.7854 )
+
+[node name="wallgltf21" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, 7.78539 )
+
+[node name="wallgltf22" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, 3.78539 )
+
+[node name="wallgltf23" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, -0.214615 )
+
+[node name="wallgltf24" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, -4.21461 )
+
+[node name="wallgltf25" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, -8.21461 )
+
+[node name="wallgltf26" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, -12.2146 )
+
+[node name="wallgltf27" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, -16.2146 )
+
+[node name="wallgltf28" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, -20.2146 )
+
+[node name="wallgltf29" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, 19.7854 )
+
+[node name="wallgltf30" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, 15.7854 )
+
+[node name="wallgltf31" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, 11.7854 )
+
+[node name="wallgltf32" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, 7.78539 )
+
+[node name="wallgltf33" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, 3.78539 )
+
+[node name="wallgltf34" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -0.214615 )
+
+[node name="wallgltf35" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -4.21461 )
+
+[node name="wallgltf36" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -8.21461 )
+
+[node name="wallgltf37" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -12.2146 )
+
+[node name="wallgltf38" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -16.2146 )
+
+[node name="wallgltf39" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -20.2146 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 23.7568 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.969, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 0 )
+shape = SubResource( 5 )
+
+[node name="Inner Walls" type="StaticBody" parent="."]
+collision_mask = 0
+
+[node name="wall_brokengltf" parent="Inner Walls" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11 )
+
+[node name="wall_end_brokengltf" parent="Inner Walls" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -11 )
+
+[node name="wall_end_brokengltf3" parent="Inner Walls" instance=ExtResource( 6 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.44874, 0, 8 )
+
+[node name="wall_end_brokengltf2" parent="Inner Walls" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0, -9 )
+
+[node name="wallCornergltf5" parent="Inner Walls" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -11 )
+
+[node name="wall_gategltf" parent="Inner Walls" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2675, 0, 17.1416 )
+
+[node name="wall_gateDoorgltf" parent="Inner Walls" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2675, 0, 17.1416 )
+
+[node name="wall_gateCornergltf" parent="Inner Walls" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.26745, 0, 17.1416 )
+
+[node name="wall_gategltf2" parent="Inner Walls" instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.26745, 0, 21.1416 )
+
+[node name="wallgltf" parent="Inner Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4379, 0, 8 )
+
+[node name="wallgltf2" parent="Inner Walls" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4379, 0, 8 )
+
+[node name="wall_brokengltf2" parent="Inner Walls" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.43786, 0, 8 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Inner Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3354, 0, 8 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Inner Walls"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.106299, 0, -11.0019 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Inner Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0011, 0, -8.89402 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Inner Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.218, 0, 20.0969 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="Inner Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.6689, 0, 17.1148 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="Inner Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2675, 0, 17.1416 )
+shape = SubResource( 11 )

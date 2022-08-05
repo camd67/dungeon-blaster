@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player/Player.cs" type="Script" id=1]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+
+[node name="Player" type="KinematicBody"]
+collision_layer = 2
+script = ExtResource( 1 )
+maxSpeed = 10.0
+acceleration = 3.0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1, 0 )
+shape = SubResource( 1 )
+
+[node name="CameraRotationHoriz" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0 )
+
+[node name="Camera" type="Camera" parent="CameraRotationHoriz"]
+
+[node name="Flashlight" type="SpotLight" parent="CameraRotationHoriz"]
+light_energy = 2.0
+shadow_enabled = true
+spot_range = 10.0
+spot_attenuation = 3.5
+spot_angle = 30.0
+spot_angle_attenuation = 0.5
