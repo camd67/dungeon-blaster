@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Player.cs" type="Script" id=1]
+[ext_resource path="res://Player/Weapon/pistol.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Player/Weapon/WeaponHandler.cs" type="Script" id=3]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
@@ -21,9 +23,24 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0 )
 [node name="Camera" type="Camera" parent="CameraRotationHoriz"]
 
 [node name="Flashlight" type="SpotLight" parent="CameraRotationHoriz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.230106 )
 light_energy = 2.0
 shadow_enabled = true
 spot_range = 10.0
 spot_attenuation = 3.5
 spot_angle = 30.0
 spot_angle_attenuation = 0.5
+
+[node name="WeaponRoot" type="Spatial" parent="CameraRotationHoriz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.139687, -0.0966336, -0.137457 )
+script = ExtResource( 3 )
+
+[node name="pistol" type="MeshInstance" parent="CameraRotationHoriz/WeaponRoot"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.000391409, 0.0139865, -0.0195265 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../..")
+
+[node name="PistolRaycast" type="RayCast" parent="CameraRotationHoriz/WeaponRoot/pistol"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.014901, 0.0274084 )
+cast_to = Vector3( 0, 0, 50 )
+collision_mask = 5
